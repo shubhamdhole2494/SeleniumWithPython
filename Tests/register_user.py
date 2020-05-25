@@ -15,7 +15,4 @@ class registerTestCases(unittest.TestCase):
     def test_valid_reg(self):
         self.hp.clickOnsignInButton()
 
-    def get_id(self):
-        return 5
-
 

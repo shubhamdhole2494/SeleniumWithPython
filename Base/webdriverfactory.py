@@ -43,16 +43,16 @@ class WebDriverFactory():
         """
         baseURL = "http://automationpractice.com/index.php"
         if self.browser == "chrome":
-            driverLocation = os.getcwd() + "/libs/chromedriver"
+            driverLocation =  "../libs/chromedriver"
             os.environ["webdriver.chrome.driver"] = driverLocation
             driver = webdriver.Chrome(driverLocation)
 
         elif self.browser == "firefox":
             driver = webdriver.Firefox(
-                executable_path=os.getcwd() + '/libs/geckodriver')
+                executable_path='../libs/geckodriver')
         else:
             driver = webdriver.Firefox(
-                executable_path=os.getcwd() + '/libs/geckodriver')
+                executable_path='../libs/geckodriver')
         # Setting Driver Implicit Time out for An Element
         driver.implicitly_wait(3)
         # Maximize the window
